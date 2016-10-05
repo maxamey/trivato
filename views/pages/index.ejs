@@ -4,9 +4,21 @@
     <meta charset="utf-8">
     <title> Triviato </title>
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
   </head>
   <body>
     <main id="app"></main>
+    <script>
+      var config = {
+        apiKey: "AIzaSyAd53wOmjPPTEbGnEXp1iNVKEN_m57feIA",
+        authDomain: "triviato-eedfa.firebaseapp.com",
+        databaseURL: "https://triviato-eedfa.firebaseio.com",
+        storageBucket: "triviato-eedfa.appspot.com",
+        messagingSenderId: "301627229965"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="javascripts/bundle.js" charset="utf-8"></script>
   </body>
 </html>
