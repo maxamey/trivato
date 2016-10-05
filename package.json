@@ -37,12 +37,5 @@
     "reactfire": "^1.0.0",
     "simplemde": "^1.11.2",
     "webpack": "^1.13.2"
-  },
-  "jest": {
-    "unmockedModulePathPatterns": [
-      "/node_modules/react",
-      "/node_modules/react-dom",
-      "/node_modules/react-addons-test-utils"
-    ]
   }
 }
