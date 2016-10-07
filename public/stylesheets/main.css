@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Helvatica, sans-serif;
   font-size: 1.5rem;
 }
 
@@ -7,7 +8,7 @@
   border-right: 1px solid black;
   display: inline-block;
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 2%;
   position: fixed;
   text-align: center;
   width: 30%;
@@ -22,16 +23,17 @@
 
 .formsContainer {
   display: inline-block;
-  margin: 10% 0;
+  margin: 5% 0;
   margin-left: 30%;
   padding: 2%;
   text-align: center;
   width: 70%;
 }
 
-.gameTitle {
+.gameTitleInput {
   display: inline-block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .qaForm {
@@ -48,4 +50,13 @@
   display: block;
   margin: 0 auto;
   margin-top: 5%;
+}
+
+.answerSelectContainer {
+  display: block;
+  text-align: center;
+}
+
+.answerSelect {
+  margin: 0 2%;
 }
