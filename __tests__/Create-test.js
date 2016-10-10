@@ -2,11 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import TestUtils from 'react-addons-test-utils'
 import Create from '../lib/Create'
+jest.mock('../lib/create')
 
 describe("Create component", ()=>{
   let CreateRendered
+  let firebase
 
   beforeEach(()=>{
+    firebase = ()=>{}
     CreateRendered = TestUtils.renderIntoDocument(<Create/>)
   })
 
