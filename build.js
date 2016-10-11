@@ -7,6 +7,8 @@ import Active from './lib/ActiveGame'
 render((
   <Router history={ hashHistory }>
     <Route path="/" component={ Create }/>
-    <Route path="/active" component={ Active }/>
+    <Route path="/active/:game_id" component={ Active }>
+      
+    </Route>
   </Router>
 ), document.getElementById('app'))
