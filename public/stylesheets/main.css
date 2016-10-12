@@ -65,6 +65,14 @@
 
 /* Active Game Styling */
 
+.initGameButtons {
+  visibility: visible;
+}
+
+.initGameButtons--hidden {
+  visibility: hidden;
+}
+
 .modal--hidden {
   visibility: hidden;
 }
