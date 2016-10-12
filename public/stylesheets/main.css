@@ -4,6 +4,8 @@
   font-size: 1.5rem;
 }
 
+/* Create Styling */
+
 .gameNavTree {
   border-right: 1px solid black;
   display: inline-block;
@@ -59,4 +61,14 @@
 
 .answerSelect {
   margin: 0 2%;
+}
+
+/* Active Game Styling */
+
+.modal--hidden {
+  visibility: hidden;
+}
+
+.modal--display {
+  visibility: visible;
 }
