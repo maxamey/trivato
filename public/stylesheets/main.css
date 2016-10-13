@@ -73,10 +73,22 @@
   visibility: hidden;
 }
 
+/* Question Modal */
+
 .modal--hidden {
   visibility: hidden;
 }
 
 .modal--display {
   visibility: visible;
+}
+
+/* Feedback */
+
+.correctFeedbackContainer--hidden {
+  visibility: hidden;
+}
+
+.incorrectFeedbackContainer--hidden {
+  visibility: hidden;
 }
