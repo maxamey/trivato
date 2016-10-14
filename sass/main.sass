@@ -1,15 +1,79 @@
 *
   box-sizing: border-box
+  font-family: Helvatica, sans-serif
+  font-size: 1.5rem
 
-// Create page
+/* Create Styling */
 
-  // nav styling
 .gameNavTree
   border-right: 1px solid black
   display: inline-block
-  height: 100%
+  height: 100vh
+  padding-top: 2%
+  position: fixed
+  text-align: center
   width: 30%
+  vertical-align: top
+  
+.gameNavTree__item
+  color: black
+  display: block
+  line-height: 2.5rem
+  text-decoration: none
 
-  .gameNavTree__item
-    color: black
-    text-decoration: none
+.formsContainer
+  display: inline-block
+  margin: 5% 0
+  margin-left: 30%
+  padding: 2%
+  text-align: center
+  width: 70%
+
+.gameTitleInput
+  display: inline-block
+  margin: 0 auto
+  text-align: center
+
+.qaForm
+  padding: 5%
+
+.questionInput
+  display: block
+  margin: 0 auto
+  width: 100%
+
+.choiceInput
+  display: block
+  margin: 0 auto
+  margin-top: 5%
+
+.answerSelectContainer
+  display: block
+  text-align: center
+
+.answerSelect
+  margin: 0 2%
+
+/* Active Game Styling */
+
+.initGameButtons
+  visibility: visible
+
+.initGameButtons--hidden
+  visibility: hidden
+
+/* Question Modal */
+
+.modal--hidden
+  visibility: hidden
+
+.modal--display
+  visibility: visible
+
+/* Feedback */
+
+.correctFeedbackContainer--hidden
+  visibility: hidden
+
+.incorrectFeedbackContainer--hidden
+  visibility: hidden
