@@ -66,31 +66,35 @@
 /* Active Game Styling */
 
 .initGameButtons {
-  visibility: visible;
+  display: inline-block;
 }
 
 .initGameButtons--hidden {
-  visibility: hidden;
+  display: none;
 }
 
 /* Question Modal */
 
 .modal--hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .modal--display {
-  visibility: visible;
+  display: inline-block;
+}
+
+.submitButton--hidden {
+  display: none;
 }
 
 /* Feedback */
 
 .correctFeedbackContainer--hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .incorrectFeedbackContainer--hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .lastQuestionButton--hidden {
@@ -98,5 +102,11 @@
 }
 
 .nextQuestion--hidden {
+  display: none;
+}
+
+/* Final Feedback */
+
+.finalFeedback--hidden {
   display: none;
 }
