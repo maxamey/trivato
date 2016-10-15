@@ -92,3 +92,11 @@
 .incorrectFeedbackContainer--hidden {
   visibility: hidden;
 }
+
+.lastQuestionButton--hidden {
+  display: none;
+}
+
+.nextQuestion--hidden {
+  display: none;
+}
