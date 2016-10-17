@@ -110,3 +110,7 @@
 .finalFeedback--hidden {
   display: none;
 }
+
+.finalFeedback--display {
+  display: inline-block;
+}
