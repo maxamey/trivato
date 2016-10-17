@@ -114,3 +114,9 @@
 .finalFeedback--display {
   display: inline-block;
 }
+
+/* Games */
+
+.gameInfoContainer--hide {
+  display: none;
+}
