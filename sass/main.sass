@@ -1,7 +1,11 @@
+@import "base/ActiveGame.sass"
+@import "base/QuestionModal.sass"
+@import "base/Nav.sass"
+
 *
   box-sizing: border-box
-  font-family: Helvatica, sans-serif
-  font-size: 1.5rem
+  font-family: Helvetica, sans-serif
+  font-weight: lighter
 
 // Create Styling
 
@@ -54,21 +58,13 @@
 .answerSelect
   margin: 0 2%
 
-// Active Game Styling
-
-.initGameButtons
-  visibility: visible
-
-.initGameButtons--hidden
-  visibility: hidden
-
 // Question Modal
 
 .modal--hidden
-  visibility: hidden
+  display: none
 
 .modal--display
-  visibility: visible
+  display: inline-block
 
 // Feedback
 
