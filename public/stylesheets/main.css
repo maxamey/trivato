@@ -1,6 +1,10 @@
 html {
   background-color: whitesmoke; }
 
+.activeGameContainer {
+  position: relative;
+  text-align: center; }
+
 .initGameButtons {
   display: inline-block;
   text-align: center;
@@ -8,12 +12,13 @@ html {
 
 .startGameButton {
   background-color: #90d3ed;
-  border-radius: 40px;
+  border-radius: 100px;
   box-shadow: 0 4px #03a9f5;
   color: white;
   display: block;
-  font-size: 4.5vh;
-  margin: 10% auto;
+  font-size: 3vw;
+  margin: auto;
+  margin-top: 20vh;
   padding: 1vh;
   top: 2px;
   width: 50vw; }
@@ -22,14 +27,33 @@ html {
   cursor: pointer; }
 
 .dontStartGameLink {
+  border: 3px solid #ff8a80;
+  border-radius: 100px;
+  color: #ff8a80;
   display: inline-block;
-  font-size: 2vh;
+  font-size: 1vw;
   margin: 10% auto;
+  position: relative;
   text-decoration: none;
-  width: 50vw; }
+  width: 22vw; }
+
+.backButtonArrow {
+  position: absolute;
+  left: 10%;
+  top: 25%; }
 
 .initGameButtons--hidden {
   display: none; }
+
+.modal--hidden {
+  display: none; }
+
+.modal--display {
+  display: inline-block;
+  margin: 0 auto;
+  height: 86vh;
+  padding-top: 12vh;
+  width: 50vh; }
 
 .navContainer {
   height: 8vh; }
@@ -39,22 +63,20 @@ html {
   display: block;
   font-size: 5vh;
   line-height: 8vh;
-  padding: 2vh;
+  padding: 2vh 0;
   text-align: center; }
 
 .navHomeLink {
-  color: rebeccapurple;
-  margin: 0 1.5vh;
+  color: #414141;
   text-decoration: none; }
 
 .navCreateLink {
-  color: rebeccapurple;
-  margin: 0 1.5vh;
+  color: #414141;
+  margin: 0 8vw;
   text-decoration: none; }
 
 .navGamesLink {
-  color: rebeccapurple;
-  margin: 0 1.5vh;
+  color: #414141;
   text-decoration: none; }
 
 * {
@@ -110,12 +132,6 @@ html {
 
 .answerSelect {
   margin: 0 2%; }
-
-.modal--hidden {
-  display: none; }
-
-.modal--display {
-  display: inline-block; }
 
 .correctFeedbackContainer--hidden {
   display: none; }
