@@ -1,10 +1,88 @@
+html {
+  background-color: whitesmoke; }
+
+.activeGameContainer {
+  position: relative;
+  text-align: center; }
+
+.initGameButtons {
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
+
+.startGameButton {
+  background-color: #90d3ed;
+  border-radius: 100px;
+  box-shadow: 0 4px #03a9f5;
+  color: white;
+  display: block;
+  font-size: 3vw;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 1vh;
+  top: 2px;
+  width: 50vw; }
+
+.startGameButton:hover {
+  cursor: pointer; }
+
+.dontStartGameLink {
+  border: 3px solid #ff8a80;
+  border-radius: 100px;
+  color: #ff8a80;
+  display: inline-block;
+  font-size: 1vw;
+  margin: 10% auto;
+  position: relative;
+  text-decoration: none;
+  width: 22vw; }
+
+.backButtonArrow {
+  position: absolute;
+  left: 10%;
+  top: 25%; }
+
+.initGameButtons--hidden {
+  display: none; }
+
+.modal--hidden {
+  display: none; }
+
+.modal--display {
+  display: inline-block;
+  margin: 0 auto;
+  height: 86vh;
+  padding-top: 12vh;
+  width: 50vh; }
+
+.navContainer {
+  height: 8vh; }
+
+.nav {
+  border-bottom: 1px solid #414141;
+  display: block;
+  font-size: 5vh;
+  line-height: 8vh;
+  padding: 2vh 0;
+  text-align: center; }
+
+.navHomeLink {
+  color: #414141;
+  text-decoration: none; }
+
+.navCreateLink {
+  color: #414141;
+  margin: 0 8vw;
+  text-decoration: none; }
+
+.navGamesLink {
+  color: #414141;
+  text-decoration: none; }
+
 * {
   box-sizing: border-box;
-  font-family: Helvatica, sans-serif;
-  font-size: 1.5rem;
-}
-
-/* Create Styling */
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter; }
 
 .gameNavTree {
   border-right: 1px solid black;
@@ -14,14 +92,13 @@
   position: fixed;
   text-align: center;
   width: 30%;
-  vertical-align: top;
-}
+  vertical-align: top; }
+
 .gameNavTree__item {
   color: black;
   display: block;
   line-height: 2.5rem;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .formsContainer {
   display: inline-block;
@@ -29,88 +106,47 @@
   margin-left: 30%;
   padding: 2%;
   text-align: center;
-  width: 70%;
-}
+  width: 70%; }
 
 .gameTitleInput {
   display: inline-block;
   margin: 0 auto;
-  text-align: center;
-}
+  text-align: center; }
 
 .qaForm {
-  padding: 5%;
-}
+  padding: 5%; }
 
 .questionInput {
   display: block;
   margin: 0 auto;
-  width: 100%;
-}
+  width: 100%; }
 
 .choiceInput {
   display: block;
   margin: 0 auto;
-  margin-top: 5%;
-}
+  margin-top: 5%; }
 
 .answerSelectContainer {
   display: block;
-  text-align: center;
-}
+  text-align: center; }
 
 .answerSelect {
-  margin: 0 2%;
-}
-
-/* Active Game Styling */
-
-.initGameButtons {
-  display: inline-block;
-}
-
-.initGameButtons--hidden {
-  display: none;
-}
-
-/* Question Modal */
-
-.modal--hidden {
-  display: none;
-}
-
-.modal--display {
-  display: inline-block;
-}
-
-.submitButton--hidden {
-  display: none;
-}
-
-/* Feedback */
+  margin: 0 2%; }
 
 .correctFeedbackContainer--hidden {
-  display: none;
-}
+  display: none; }
 
 .incorrectFeedbackContainer--hidden {
-  display: none;
-}
+  display: none; }
 
 .lastQuestionButton--hidden {
-  display: none;
-}
+  display: none; }
 
 .nextQuestion--hidden {
-  display: none;
-}
-
-/* Final Feedback */
+  display: none; }
 
 .finalFeedback--hidden {
-  display: none;
-}
+  display: none; }
 
 .finalFeedback--display {
-  display: inline-block;
-}
+  display: inline-block; }

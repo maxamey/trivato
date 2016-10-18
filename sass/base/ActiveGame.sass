@@ -1,0 +1,50 @@
+@import "variables.sass"
+
+// Active Game Styling
+
+html
+  background-color: rgb(245, 245, 245)
+
+.activeGameContainer
+  position: relative
+  text-align: center
+
+.initGameButtons
+  display: inline-block
+  text-align: center
+  width: 100%
+
+.startGameButton
+  background-color: rgb(144, 211, 237)
+  border-radius: 100px
+  box-shadow: 0 4px rgb(3, 169, 245)
+  color: rgb(255, 255, 255)
+  display: block
+  font-size: 3vw
+  margin: auto
+  margin-top: 20vh
+  padding: 1vh
+  top: 2px
+  width: 50vw
+
+.startGameButton:hover
+  cursor: pointer
+
+.dontStartGameLink
+  border: 3px solid rgb(255, 138, 128)
+  border-radius: 100px
+  color: rgb(255, 138, 128)
+  display: inline-block
+  font-size: 1vw
+  margin: 10% auto
+  position: relative
+  text-decoration: none
+  width: 22vw
+
+.backButtonArrow
+  position: absolute
+  left: 10%
+  top: 25%
+
+.initGameButtons--hidden
+  display: none
