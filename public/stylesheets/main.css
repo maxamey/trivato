@@ -49,16 +49,22 @@
   display: inline-block;
   margin: 0 auto;
   height: 86vh;
-  padding-top: 7.5vh;
+  padding-top: 5vh;
   width: 70vw; }
 
 .currentQuestionContainer {
-  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 4px #03a9f5;
+  display: table-cell;
   height: 15vh;
-  position: relative; }
+  padding: 3vh;
+  position: relative;
+  vertical-align: bottom;
+  width: 50vw; }
 
 .currentQuestion {
-  font-size: 4vh; }
+  font-size: 3vh;
+  margin: 0; }
 
 .answerInputForm {
   display: inline-block;
@@ -112,7 +118,7 @@
   width: 6.5vh; }
 
 .answerChoiceLabel:hover input ~ .controlIndicator,
-.answerChoiceLabel input:focus ~ .controlIndicator {
+.answerChoiceLabel input:checked ~ .controlIndicator {
   background-color: white;
   font-weight: bold;
   transition: background-color 0.3s;
@@ -138,12 +144,16 @@
   outline: 0;
   padding: 1vh;
   top: 2px;
+  transition: background-color .3s;
+  transition: color .3s;
   width: 30vh; }
 
 .submitButton--display:hover {
   background-color: #03a9f5;
   box-shadow: 0 2px #0d47a1;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color .3s;
+  transition: color .3s; }
 
 .submitButton--hidden {
   display: none; }
@@ -152,34 +162,49 @@
   display: none; }
 
 .correctFeedbackContainer--display {
-  background-color: rgba(82, 213, 138, 0.3);
+  background-color: rgba(88, 88, 88, 0.3);
   border: 10px solid #27ae61;
-  border-radius: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
   color: white;
-  display: inline-block;
-  height: 310px;
+  display: table-cell;
+  height: 60vh;
   left: 0;
   line-height: 5vh;
   padding: 3vh;
   position: absolute;
   top: 2vh;
+  vertical-align: bottom;
   width: 100%; }
 
 .correctFeedbackText {
-  font-size: 5vh;
-  letter-spacing: 5px;
-  margin: 0 0 160px 0; }
+  background-color: #c3deb7;
+  border: 3px solid #27ae61;
+  border-left: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-size: 4vh;
+  left: 0px;
+  padding: 1vh 1.5vh;
+  position: absolute;
+  top: 45vh;
+  width: 95%; }
 
 .incorrectFeedbackContainer--hidden {
   display: none; }
 
 .incorrectFeedbackContainer--display {
-  background-color: rgba(255, 138, 128, 0.3);
+  background-color: rgba(88, 88, 88, 0.3);
   border: 10px solid #cb4e4e;
-  border-radius: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
   color: white;
   display: inline-block;
-  height: 310px;
+  height: 60vh;
   left: 0;
   line-height: 5vh;
   padding: 3vh;
@@ -190,18 +215,20 @@
 .incorrectFeedbackTitle {
   font-size: 5vh;
   letter-spacing: 5px;
-  margin: 0 0 160px 0; }
+  margin: 0 0 30vh 0; }
 
 .incorrectFeedbackInfo {
-  background-color: #52d58a;
-  border: 3px solid #27ae61;
-  border-radius: 40px;
-  font-size: 3vh;
-  left: -5px;
+  background-color: #ff8a80;
+  border: 3px solid #cb4e4e;
+  border-left: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-size: 2.5vh;
+  left: 0px;
   padding: 1vh 1.5vh;
   position: absolute;
-  top: 300px;
-  width: 100%; }
+  top: 47vh;
+  width: 95%; }
 
 .lastQuestionButton--hidden {
   display: none; }
@@ -210,22 +237,32 @@
   display: none; }
 
 .nextQuestion {
-  background-color: #bf90d4;
+  background-color: whitesmoke;
   border: none;
   border-radius: 100px;
-  box-shadow: 0 4px #8d44ad;
-  color: white;
+  box-shadow: 0 4px #03a9f5;
+  color: #03a9f5;
   display: inline-block;
-  font-size: 3vh;
-  line-height: 5vh;
-  margin: 1vh;
+  float: right;
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+  margin: 39vh 1vh 1vh 1vh;
   outline: 0;
   padding: 1vh;
-  width: 40vh; }
+  transition: background-color .3s;
+  transition: color .3s;
+  width: 25vh; }
 
 .nextQuestion:hover {
-  box-shadow: 0 2px #8d44ad;
-  cursor: pointer; }
+  background-color: #03a9f5;
+  box-shadow: 0 2px #0d47a1;
+  color: white;
+  cursor: pointer;
+  transition: background-color .3s;
+  transition: color .3s; }
+
+.forwardButtonArrow {
+  margin-left: 3vh; }
 
 .lastQuestionButton--display {
   background-color: #bf90d4;
@@ -235,9 +272,10 @@
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: 3vh;
-  line-height: 5vh;
-  margin: 1vh;
+  float: right;
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+  margin: 39vh 1vh 1vh 1vh;
   outline: 0;
   padding: 1vh;
   width: 20vh; }
@@ -252,7 +290,6 @@
 
 .finalFeedback--display {
   background-color: whitesmoke;
-  border-radius: 40px;
   font-size: 3vh;
   left: -5px;
   height: 85%;
@@ -262,8 +299,20 @@
   top: 2vh;
   width: 100%; }
 
+.incorrectFeedback {
+  background: #03a9f5;
+  border-bottom: 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  color: white;
+  font-size: 2.5vh;
+  margin: auto auto 0 auto;
+  padding: 1vh;
+  width: 30vw; }
+
 .incorrectList {
   display: inline-block;
+  margin-top: 0;
   padding: 0;
   width: 50vw; }
 
@@ -300,8 +349,8 @@
 .nav {
   border-bottom: 1px solid #414141;
   display: block;
-  font-size: 5vh;
-  line-height: 8vh;
+  font-size: 2.5vh;
+  line-height: 5vh;
   padding: 2vh 0;
   text-align: center; }
 
@@ -318,6 +367,130 @@
   color: #414141;
   text-decoration: none; }
 
+.gameNavTree {
+  border-right: 1px solid black;
+  display: inline-block;
+  height: 90vh;
+  overflow-y: scroll;
+  padding: 2%;
+  position: fixed;
+  text-align: center;
+  width: 25%;
+  vertical-align: top; }
+
+.gameNavTreeItemContainer {
+  overflow: scroll; }
+
+.gameNavTreeItem {
+  color: black;
+  display: block;
+  font-size: 3vh;
+  line-height: 5vh;
+  text-align: left;
+  text-decoration: none; }
+
+.formsContainer {
+  display: inline-block;
+  font-size: 4vh;
+  height: 100%;
+  margin: 0;
+  margin-left: 25%;
+  overflow: scroll;
+  padding: 2%;
+  text-align: center;
+  width: 70%; }
+
+.gameTitleInput {
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 0 4px #03a9f5;
+  display: inline-block;
+  font-size: 4vh;
+  height: 8vh;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  outline: 0;
+  text-align: center; }
+
+.qaForm {
+  padding: 2%; }
+
+.questionInput {
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 0 4px #bf90d4;
+  display: inline-block;
+  font-size: 4vh;
+  height: 8vh;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  outline: 0;
+  text-align: center;
+  width: 100%; }
+
+.choiceInput {
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 0 4px #ff9329;
+  display: inline-block;
+  font-size: 4vh;
+  height: 5vh;
+  margin: 0 1vh;
+  margin-bottom: 2%;
+  outline: 0;
+  padding-left: 2vh; }
+
+.answerSelectContainer {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 20vw; }
+
+.correctAnswerLabel {
+  font-size: 3vh; }
+
+.answerSelect {
+  appearance: none;
+  background: white;
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 0 2px #27ae61;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 3vh;
+  height: 5vh;
+  margin: 0 2%;
+  outline: 0;
+  width: 100%; }
+
+.qaSubmit {
+  background-color: #90d3ed;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 4px #03a9f5;
+  color: white;
+  display: inline-block;
+  font-size: 3vh;
+  margin: 1vh;
+  outline: 0;
+  padding: 1vh;
+  width: 30vh; }
+
+.qaSubmit:hover {
+  background-color: #03a9f5;
+  box-shadow: 0 2px #0d47a1;
+  cursor: pointer; }
+
+.createToHomeLink {
+  border-radius: 100px;
+  color: #ff8a80;
+  display: inline-block;
+  font-size: 3vh;
+  padding: 1vh;
+  position: relative;
+  text-decoration: none; }
+
 * {
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
@@ -325,52 +498,3 @@
 
 html {
   background-color: whitesmoke; }
-
-.gameNavTree {
-  border-right: 1px solid black;
-  display: inline-block;
-  height: 100vh;
-  padding-top: 2%;
-  position: fixed;
-  text-align: center;
-  width: 30%;
-  vertical-align: top; }
-
-.gameNavTreeItem {
-  color: black;
-  display: block;
-  line-height: 2.5rem;
-  text-decoration: none; }
-
-.formsContainer {
-  display: inline-block;
-  margin: 5% 0;
-  margin-left: 30%;
-  padding: 2%;
-  text-align: center;
-  width: 70%; }
-
-.gameTitleInput {
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center; }
-
-.qaForm {
-  padding: 5%; }
-
-.questionInput {
-  display: block;
-  margin: 0 auto;
-  width: 100%; }
-
-.choiceInput {
-  display: block;
-  margin: 0 auto;
-  margin-top: 5%; }
-
-.answerSelectContainer {
-  display: block;
-  text-align: center; }
-
-.answerSelect {
-  margin: 0 2%; }
