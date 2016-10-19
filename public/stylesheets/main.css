@@ -1,6 +1,3 @@
-html {
-  background-color: whitesmoke; }
-
 .activeGameContainer {
   position: relative;
   text-align: center; }
@@ -52,8 +49,250 @@ html {
   display: inline-block;
   margin: 0 auto;
   height: 86vh;
-  padding-top: 12vh;
-  width: 50vh; }
+  padding-top: 7.5vh;
+  width: 70vw; }
+
+.currentQuestionContainer {
+  display: inline-block;
+  height: 15vh;
+  position: relative; }
+
+.currentQuestion {
+  font-size: 4vh; }
+
+.answerInputForm {
+  display: inline-block;
+  line-height: 5vh;
+  padding: 3vh;
+  position: relative;
+  width: 50vw; }
+
+.answerChoiceLabel {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 3vh;
+  width: 100%; }
+
+.answerChoice {
+  position: absolute;
+  opacity: 0; }
+
+.answerChoiceContainer {
+  background-color: #ff9329;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px #dc5400;
+  color: whitesmoke;
+  height: 8vh;
+  line-height: 8vh;
+  margin: 2vh 0;
+  padding-left: 2vw;
+  position: relative;
+  text-align: left; }
+
+.answerChoiceContainer--hidden {
+  visibility: hidden; }
+
+.controlIndicator {
+  background-color: whitesmoke;
+  border-radius: 40px;
+  box-shadow: 0 4px #dc5400;
+  color: #03a9f5;
+  display: inline-block;
+  float: right;
+  font-size: 4vh;
+  height: 6.5vh;
+  line-height: 6.5vh;
+  margin: .7vh 1vh;
+  text-align: center;
+  transition: font-weight 0.3s;
+  transition: width 0.3s;
+  width: 6.5vh; }
+
+.answerChoiceLabel:hover input ~ .controlIndicator,
+.answerChoiceLabel input:focus ~ .controlIndicator {
+  background-color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  transition: font-weight 0.3s;
+  transition: width 0.3s;
+  width: 30vh; }
+
+.answerChoiceLabel input:focus ~ .controlIndicator {
+  background-color: whitesmoke;
+  box-shadow: inset 0 4px #dc5400;
+  transition: background-color 0.3s; }
+
+.submitButton--display {
+  background-color: #90d3ed;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 4px #03a9f5;
+  color: white;
+  display: inline-block;
+  float: right;
+  font-size: 3vh;
+  margin: 0 1vh;
+  outline: 0;
+  padding: 1vh;
+  top: 2px;
+  width: 30vh; }
+
+.submitButton--display:hover {
+  background-color: #03a9f5;
+  box-shadow: 0 2px #0d47a1;
+  cursor: pointer; }
+
+.submitButton--hidden {
+  display: none; }
+
+.correctFeedbackContainer--hidden {
+  display: none; }
+
+.correctFeedbackContainer--display {
+  background-color: rgba(82, 213, 138, 0.3);
+  border: 10px solid #27ae61;
+  border-radius: 40px;
+  color: white;
+  display: inline-block;
+  height: 310px;
+  left: 0;
+  line-height: 5vh;
+  padding: 3vh;
+  position: absolute;
+  top: 2vh;
+  width: 100%; }
+
+.correctFeedbackText {
+  font-size: 5vh;
+  letter-spacing: 5px;
+  margin: 0 0 160px 0; }
+
+.incorrectFeedbackContainer--hidden {
+  display: none; }
+
+.incorrectFeedbackContainer--display {
+  background-color: rgba(255, 138, 128, 0.3);
+  border: 10px solid #cb4e4e;
+  border-radius: 40px;
+  color: white;
+  display: inline-block;
+  height: 310px;
+  left: 0;
+  line-height: 5vh;
+  padding: 3vh;
+  position: absolute;
+  top: 2vh;
+  width: 100%; }
+
+.incorrectFeedbackTitle {
+  font-size: 5vh;
+  letter-spacing: 5px;
+  margin: 0 0 160px 0; }
+
+.incorrectFeedbackInfo {
+  background-color: #52d58a;
+  border: 3px solid #27ae61;
+  border-radius: 40px;
+  font-size: 3vh;
+  left: -5px;
+  padding: 1vh 1.5vh;
+  position: absolute;
+  top: 300px;
+  width: 100%; }
+
+.lastQuestionButton--hidden {
+  display: none; }
+
+.nextQuestion--hidden {
+  display: none; }
+
+.nextQuestion {
+  background-color: #bf90d4;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 4px #8d44ad;
+  color: white;
+  display: inline-block;
+  font-size: 3vh;
+  line-height: 5vh;
+  margin: 1vh;
+  outline: 0;
+  padding: 1vh;
+  width: 40vh; }
+
+.nextQuestion:hover {
+  box-shadow: 0 2px #8d44ad;
+  cursor: pointer; }
+
+.lastQuestionButton--display {
+  background-color: #bf90d4;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 4px #8d44ad;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 3vh;
+  line-height: 5vh;
+  margin: 1vh;
+  outline: 0;
+  padding: 1vh;
+  width: 20vh; }
+
+.questionCounter {
+  position: absolute;
+  left: 5vh;
+  bottom: 5vh; }
+
+.finalFeedback--hidden {
+  display: none; }
+
+.finalFeedback--display {
+  background-color: whitesmoke;
+  border-radius: 40px;
+  font-size: 3vh;
+  left: -5px;
+  height: 85%;
+  overflow: scroll;
+  padding: 1vh 1.5vh;
+  position: absolute;
+  top: 2vh;
+  width: 100%; }
+
+.incorrectList {
+  display: inline-block;
+  padding: 0;
+  width: 50vw; }
+
+.incorrectQuestionItem {
+  background-color: white;
+  box-shadow: 0 4px #03a9f5;
+  border-radius: 40px;
+  list-style: none;
+  margin-bottom: 3vh;
+  padding: 4vh; }
+
+.incorrectAnswerChoice {
+  display: block;
+  text-align: left; }
+
+.incorrectAnswerChoice__label {
+  background-color: whitesmoke;
+  border-radius: 40px;
+  box-shadow: 0 4px #03a9f5;
+  color: #03a9f5;
+  display: inline-block;
+  font-size: 4vh;
+  height: 6.5vh;
+  line-height: 6.5vh;
+  margin: .7vh 3vh;
+  text-align: center;
+  transition: font-weight 0.3s;
+  transition: width 0.3s;
+  width: 6.5vh; }
 
 .navContainer {
   height: 8vh; }
@@ -84,6 +323,9 @@ html {
   font-family: Helvetica, sans-serif;
   font-weight: lighter; }
 
+html {
+  background-color: whitesmoke; }
+
 .gameNavTree {
   border-right: 1px solid black;
   display: inline-block;
@@ -94,7 +336,7 @@ html {
   width: 30%;
   vertical-align: top; }
 
-.gameNavTree__item {
+.gameNavTreeItem {
   color: black;
   display: block;
   line-height: 2.5rem;
@@ -132,21 +374,3 @@ html {
 
 .answerSelect {
   margin: 0 2%; }
-
-.correctFeedbackContainer--hidden {
-  display: none; }
-
-.incorrectFeedbackContainer--hidden {
-  display: none; }
-
-.lastQuestionButton--hidden {
-  display: none; }
-
-.nextQuestion--hidden {
-  display: none; }
-
-.finalFeedback--hidden {
-  display: none; }
-
-.finalFeedback--display {
-  display: inline-block; }
