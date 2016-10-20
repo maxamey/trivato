@@ -1,86 +1,72 @@
 @import "base/ActiveGame.sass"
 @import "base/QuestionModal.sass"
 @import "base/Nav.sass"
+@import "base/Create.sass"
+@import "base/Games.sass"
+
+@font-face
+  font-family: SciFly-Sans
+  src: url('../../assets/fonts/SciFly-Sans.ttf')
 
 *
   box-sizing: border-box
   font-family: Helvetica, sans-serif
   font-weight: lighter
 
-// Create Styling
+html
+  background-color: rgb(237, 237, 237)
 
-.gameNavTree
-  border-right: 1px solid black
+body
+  overflow: hidden
+
+// Home
+
+.homeContainer
+  background-color: white
+  background-image: url('../../assets/images/books3.jpeg')
+  background-position: right
+  background-repeat: no-repeat
+  background-size: contain
   display: inline-block
-  height: 100vh
-  padding-top: 2%
-  position: fixed
+  height: 89vh
   text-align: center
-  width: 30%
-  vertical-align: top
+  width: 99vw
 
-.gameNavTree__item
-  color: black
+.homeTitle
+  font-family: SciFly-Sans, Helvetica
+  font-size: 12vh
+  letter-spacing: 20px
+  text-transform: uppercase
+
+.homeInfo
+  font-size: 3vh
+
+.toCreatePageLink
+  background-color: rgb(255, 147, 41)
+  border-radius: 40px
+  box-shadow: 0 4px rgb(220, 84, 0)
+  color: rgb(245, 245, 245)
   display: block
-  line-height: 2.5rem
+  font-size: 5vh
+  height: 8vh
+  line-height: 8vh
+  margin: 3vh auto
+  padding: 0
+  position: relative
   text-decoration: none
+  width: 30vw
 
-.formsContainer
-  display: inline-block
-  margin: 5% 0
-  margin-left: 30%
-  padding: 2%
-  text-align: center
-  width: 70%
-
-.gameTitleInput
-  display: inline-block
-  margin: 0 auto
-  text-align: center
-
-.qaForm
-  padding: 5%
-
-.questionInput
+.toGamesListLink
+  background-color: rgb(3, 169, 245)
+  border-radius: 40px
+  box-shadow: 0 4px rgb(13, 71, 161)
+  color: rgb(245, 245, 245)
   display: block
-  margin: 0 auto
-  width: 100%
-
-.choiceInput
-  display: block
-  margin: 0 auto
-  margin-top: 5%
-
-.answerSelectContainer
-  display: block
-  text-align: center
-
-.answerSelect
-  margin: 0 2%
-
-// Feedback
-
-.correctFeedbackContainer--hidden
-  display: none
-
-
-.incorrectFeedbackContainer--hidden
-  display: none
-
-
-.lastQuestionButton--hidden
-  display: none
-
-
-.nextQuestion--hidden
-  display: none
-
-
-// Final Feedback
-
-.finalFeedback--hidden
-  display: none
-
-
-.finalFeedback--display
-  display: inline-block
+  font-size: 5vh
+  height: 8vh
+  line-height: 8vh
+  margin: 3vh auto
+  padding: 0
+  position: relative
+  text-decoration: none
+  width: 30vw

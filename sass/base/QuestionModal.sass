@@ -9,7 +9,316 @@
   display: inline-block
   margin: 0 auto
   height: 86vh
-  padding-top: 12vh
-  width: 50vh
+  padding-top: 5vh
+  width: 70vw
 
-    
+.currentQuestionContainer
+  border-radius: 40px
+  box-shadow: 0 4px rgb(3, 169, 245)
+  display: table-cell
+  height: 15vh
+  padding: 3vh
+  position: relative
+  vertical-align: bottom
+  width: 70vw
+
+.currentQuestion
+  font-size: 3vh
+  margin: 0
+
+.answerInputForm
+  display: inline-block
+  line-height: 5vh
+  padding: 3vh
+  position: relative
+  width: 50vw
+
+.answerChoiceLabel
+  cursor: pointer
+  display: inline-block
+  height: 8vh
+  width: 100%
+
+.answerChoice
+  // hiding default radio
+  position: absolute
+  opacity: 0
+
+.answerChoiceText
+  display: inline-block
+  font-size: inherit
+  height: 8vh
+  line-height: normal
+  padding: 8px 0
+  vertical-align: middle
+  width: 50%
+
+.answerChoiceContainer
+  background-color: rgb(255, 147, 41)
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  border-top-right-radius: 40px
+  border-bottom-right-radius: 40px
+  box-shadow: 0 4px rgb(220, 84, 0)
+  color: rgb(245, 245, 245)
+  height: 8vh
+  margin: 2vh 0
+  padding-left: 2vw
+  position: relative
+  text-align: left
+
+.answerChoiceContainer--hidden
+  visibility: hidden
+
+.controlIndicator
+  background-color: rgb(245, 245, 245)
+  border-radius: 40px
+  box-shadow: 0 4px rgb(220, 84, 0)
+  color: rgb(3, 169, 245)
+  display: inline-block
+  float: right
+  font-size: 4vh
+  height: 6.5vh
+  line-height: 6.5vh
+  margin: .7vh 1vh
+  text-align: center
+  transition: font-weight 0.3s
+  transition: width 0.3s
+  width: 6.5vh
+
+.answerChoiceLabel:hover input ~ .controlIndicator,
+.answerChoiceLabel input:checked ~ .controlIndicator
+  background-color: white
+  font-weight: bold
+  transition: background-color 0.3s
+  transition: font-weight 0.3s
+  transition: width 0.3s
+  width: 30vh
+
+.answerChoiceLabel input:focus ~ .controlIndicator
+  background-color: rgb(245, 245, 245)
+  box-shadow: inset 0 4px rgb(220, 84, 0)
+  transition: background-color 0.3s
+
+
+.submitButton--display
+  background-color: rgb(144, 211, 237)
+  border: none
+  border-radius: 100px
+  box-shadow: 0 4px rgb(3, 169, 245)
+  color: rgb(255, 255, 255)
+  display: inline-block
+  float: right
+  font-size: 3vh
+  margin: 0 1vh
+  outline: 0
+  padding: 1vh
+  top: 2px
+  transition: background-color .3s
+  transition: color .3s
+  width: 30vh
+
+.submitButton--display:hover
+  background-color: rgb(3, 169, 245)
+  box-shadow: 0 2px rgb(13, 71, 161)
+  cursor: pointer
+  transition: background-color .3s
+  transition: color .3s
+
+
+.submitButton--hidden
+  display: none
+
+// Feedback
+
+.correctFeedbackContainer--hidden
+  display: none
+
+.correctFeedbackContainer--display
+  background-color: rgba(88, 88, 88, .3)
+  border: 5px solid rgb(39, 174, 97)
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  border-top-right-radius: 40px
+  border-bottom-right-radius: 40px
+  color: rgb(255, 255, 255)
+  display: table-cell
+  height: 60vh
+  left: 0
+  line-height: 5vh
+  padding: 3vh
+  position: absolute
+  top: 2vh
+  vertical-align: bottom
+  width: 100%
+
+.correctFeedbackText
+  background-color: rgb(195, 222, 183)
+  border: 3px solid rgb(39, 174, 97)
+  border-left: 0
+  border-top-right-radius: 40px
+  border-bottom-right-radius: 40px
+  font-size: 4vh
+  left: 0px
+  padding: 1vh 1.5vh
+  position: absolute
+  top: 46vh
+  width: 95%
+
+.incorrectFeedbackContainer--hidden
+  display: none
+
+.incorrectFeedbackContainer--display
+  background-color: rgba(88, 88, 88, .3)
+  border: 5px solid rgb(203, 78, 78)
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  border-top-right-radius: 40px
+  border-bottom-right-radius: 40px
+  color: rgb(255, 255, 255)
+  display: inline-block
+  height: 60vh
+  left: 0
+  line-height: 5vh
+  padding: 3vh
+  position: absolute
+  top: 2vh
+  width: 100%
+
+.incorrectFeedbackTitle
+  font-size: 5vh
+  letter-spacing: 5px
+  margin: 0 0 30vh 0
+
+.incorrectFeedbackInfo
+  background-color: rgb(255, 138, 128)
+  border: 3px solid rgb(203, 78, 78)
+  border-left: 0
+  border-top-right-radius: 40px
+  border-bottom-right-radius: 40px
+  font-size: 2.5vh
+  left: 0px
+  padding: 1vh 1.5vh
+  position: absolute
+  top: 47vh
+  width: 95%
+
+.lastQuestionButton--hidden
+  display: none
+
+.nextQuestion--hidden
+  display: none
+
+.nextQuestion
+  background-color: rgb(245, 245, 245)
+  border: none
+  border-radius: 100px
+  box-shadow: 0 4px rgb(3, 169, 245)
+  color: rgb(3, 169, 245)
+  display: inline-block
+  float: right
+  font-size: 2.5vh
+  line-height: 3.5vh
+  margin: 39vh 1vh 1vh 1vh
+  outline: 0
+  padding: 1vh
+  transition: background-color .3s
+  transition: color .3s
+  width: 25vh
+
+.nextQuestion:hover
+  background-color: rgb(3, 169, 245)
+  box-shadow: 0 2px rgb(13, 71, 161)
+  color: white
+  cursor: pointer
+  transition: background-color .3s
+  transition: color .3s
+
+.forwardButtonArrow
+  margin-left: 3vh
+
+.lastQuestionButton--display
+  background-color: rgb(191, 144, 212)
+  border: none
+  border-radius: 100px
+  box-shadow: 0 4px rgb(141, 68, 173)
+  color: rgb(255, 255, 255)
+  cursor: pointer
+  display: inline-block
+  float: right
+  font-size: 2.5vh
+  line-height: 3.5vh
+  margin: 39vh 1vh 1vh 1vh
+  outline: 0
+  padding: 1vh
+  transition: letter-spacing 0.3s
+  width: 20vh
+
+.lastQuestionButton--display:hover
+  letter-spacing: 8px
+  transition: letter-spacing 0.3s
+
+.questionCounter
+  position: absolute
+  left: 5vh
+  bottom: 5vh
+
+// Final Feedback
+
+.finalFeedback--hidden
+  display: none
+
+.finalFeedback--display
+  background-color: rgb(245, 245, 245)
+  font-size: 3vh
+  left: -5px
+  height: 85%
+  overflow: scroll
+  padding: 1vh 1.5vh
+  position: absolute
+  top: 2vh
+  width: 100%
+
+.incorrectFeedback
+  background: rgb(3, 169, 245)
+  border-bottom: 0
+  border-top-left-radius: 40px
+  border-top-right-radius: 40px
+  color: white
+  font-size: 2.5vh
+  margin: auto auto 0 auto
+  padding: 1vh
+  width: 30vw
+
+.incorrectList
+  display: inline-block
+  margin-top: 0
+  padding: 0
+  width: 50vw
+
+.incorrectQuestionItem
+  background-color: white
+  box-shadow: 0 4px rgb(3, 169, 245)
+  border-radius: 40px
+  list-style: none
+  margin-bottom: 3vh
+  padding: 4vh
+
+.incorrectAnswerChoice
+  display: block
+  text-align: left
+
+.incorrectAnswerChoice__label
+  background-color: rgb(245, 245, 245)
+  border-radius: 40px
+  box-shadow: 0 4px rgb(3, 169, 245)
+  color: rgb(3, 169, 245)
+  display: inline-block
+  font-size: 4vh
+  height: 6.5vh
+  line-height: 6.5vh
+  margin: .7vh 3vh
+  text-align: center
+  transition: font-weight 0.3s
+  transition: width 0.3s
+  width: 6.5vh
