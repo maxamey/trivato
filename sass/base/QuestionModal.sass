@@ -20,7 +20,7 @@
   padding: 3vh
   position: relative
   vertical-align: bottom
-  width: 50vw
+  width: 70vw
 
 .currentQuestion
   font-size: 3vh
@@ -36,12 +36,22 @@
 .answerChoiceLabel
   cursor: pointer
   display: inline-block
-  font-size: 3vh
+  height: 8vh
   width: 100%
 
 .answerChoice
+  // hiding default radio
   position: absolute
   opacity: 0
+
+.answerChoiceText
+  display: inline-block
+  font-size: inherit
+  height: 8vh
+  line-height: normal
+  padding: 8px 0
+  vertical-align: middle
+  width: 50%
 
 .answerChoiceContainer
   background-color: rgb(255, 147, 41)
@@ -52,7 +62,6 @@
   box-shadow: 0 4px rgb(220, 84, 0)
   color: rgb(245, 245, 245)
   height: 8vh
-  line-height: 8vh
   margin: 2vh 0
   padding-left: 2vw
   position: relative
@@ -127,7 +136,7 @@
 
 .correctFeedbackContainer--display
   background-color: rgba(88, 88, 88, .3)
-  border: 10px solid rgb(39, 174, 97)
+  border: 5px solid rgb(39, 174, 97)
   border-top-left-radius: 5px
   border-bottom-left-radius: 5px
   border-top-right-radius: 40px
@@ -153,7 +162,7 @@
   left: 0px
   padding: 1vh 1.5vh
   position: absolute
-  top: 45vh
+  top: 46vh
   width: 95%
 
 .incorrectFeedbackContainer--hidden
@@ -161,7 +170,7 @@
 
 .incorrectFeedbackContainer--display
   background-color: rgba(88, 88, 88, .3)
-  border: 10px solid rgb(203, 78, 78)
+  border: 5px solid rgb(203, 78, 78)
   border-top-left-radius: 5px
   border-bottom-left-radius: 5px
   border-top-right-radius: 40px
@@ -242,7 +251,12 @@
   margin: 39vh 1vh 1vh 1vh
   outline: 0
   padding: 1vh
+  transition: letter-spacing 0.3s
   width: 20vh
+
+.lastQuestionButton--display:hover
+  letter-spacing: 8px
+  transition: letter-spacing 0.3s
 
 .questionCounter
   position: absolute

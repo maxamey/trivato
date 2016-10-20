@@ -2,6 +2,11 @@
 @import "base/QuestionModal.sass"
 @import "base/Nav.sass"
 @import "base/Create.sass"
+@import "base/Games.sass"
+
+@font-face
+  font-family: SciFly-Sans
+  src: url('../../assets/fonts/SciFly-Sans.ttf')
 
 *
   box-sizing: border-box
@@ -9,4 +14,59 @@
   font-weight: lighter
 
 html
-  background-color: rgb(245, 245, 245)
+  background-color: rgb(237, 237, 237)
+
+body
+  overflow: hidden
+
+// Home
+
+.homeContainer
+  background-color: white
+  background-image: url('../../assets/images/books3.jpeg')
+  background-position: right
+  background-repeat: no-repeat
+  background-size: contain
+  display: inline-block
+  height: 89vh
+  text-align: center
+  width: 99vw
+
+.homeTitle
+  font-family: SciFly-Sans, Helvetica
+  font-size: 12vh
+  letter-spacing: 20px
+  text-transform: uppercase
+
+.homeInfo
+  font-size: 3vh
+
+.toCreatePageLink
+  background-color: rgb(255, 147, 41)
+  border-radius: 40px
+  box-shadow: 0 4px rgb(220, 84, 0)
+  color: rgb(245, 245, 245)
+  display: block
+  font-size: 5vh
+  height: 8vh
+  line-height: 8vh
+  margin: 3vh auto
+  padding: 0
+  position: relative
+  text-decoration: none
+  width: 30vw
+
+.toGamesListLink
+  background-color: rgb(3, 169, 245)
+  border-radius: 40px
+  box-shadow: 0 4px rgb(13, 71, 161)
+  color: rgb(245, 245, 245)
+  display: block
+  font-size: 5vh
+  height: 8vh
+  line-height: 8vh
+  margin: 3vh auto
+  padding: 0
+  position: relative
+  text-decoration: none
+  width: 30vw
