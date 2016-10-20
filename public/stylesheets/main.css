@@ -331,18 +331,24 @@
 
 .incorrectQuestionItem {
   background-color: white;
+  border: 1px solid #03a9f5;
   box-shadow: 0 4px #03a9f5;
   border-radius: 40px;
   list-style: none;
   margin-bottom: 3vh;
   padding: 4vh; }
 
+.incorrectQuestionText {
+  font-size: 3vh; }
+
 .incorrectAnswerChoice {
   display: block;
+  font-size: 2vh;
   text-align: left; }
 
 .incorrectAnswerChoice__label {
   background-color: whitesmoke;
+  border: 1px solid #03a9f5;
   border-radius: 40px;
   box-shadow: 0 4px #03a9f5;
   color: #03a9f5;
@@ -429,7 +435,7 @@
   width: 70%; }
 
 .gameTitleInput {
-  border: 0;
+  border: 1px solid #03a9f5;
   border-radius: 40px;
   box-shadow: 0 4px #03a9f5;
   display: inline-block;
@@ -444,7 +450,7 @@
   padding: 2%; }
 
 .questionInput {
-  border: 0;
+  border: 1px solid #bf90d4;
   border-radius: 40px;
   box-shadow: 0 4px #bf90d4;
   display: inline-block;
@@ -457,7 +463,7 @@
   width: 100%; }
 
 .choiceInput {
-  border: 0;
+  border: 1px solid #ff9329;
   border-radius: 40px;
   box-shadow: 0 4px #ff9329;
   display: inline-block;
@@ -481,7 +487,7 @@
 .answerSelect {
   appearance: none;
   background: white;
-  border: 0;
+  border: 1px solid #27ae61;
   border-radius: 40px;
   box-shadow: 0 2px #27ae61;
   cursor: pointer;
@@ -538,6 +544,7 @@
 
 .gameItemContainer {
   background-color: white;
+  border: 1px solid #03a9f5;
   border-radius: 40px;
   box-shadow: 0 4px #03a9f5;
   color: #03a9f5;
@@ -557,11 +564,11 @@
   color: black; }
 
 .gameItemLink {
-  background-color: #ff9329;
-  border: none;
+  background-color: whitesmoke;
+  border: 1px solid #ff9329;
   border-radius: 100px;
-  box-shadow: 0 4px #dc5400;
-  color: white;
+  box-shadow: 0 4px #ff9329;
+  color: #ff9329;
   cursor: pointer;
   display: inline-block;
   font-size: 2.5vh;
@@ -586,7 +593,7 @@
   font-weight: lighter; }
 
 html {
-  background-color: #ededed; }
+  background-color: whitesmoke; }
 
 body {
   overflow: hidden; }
