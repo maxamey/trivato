@@ -4,27 +4,26 @@ import TestUtils from 'react-addons-test-utils'
 import Create from '../lib/Create'
 jest.mock('../lib/create')
 
-window.firebase = {
-  database: ()=>{
-    return {
-      ref: ()=>{
-        return {
-          once: ()=>{
-
-          }
-        }
-      }
-    }
-  }
-}
 
 describe("Create component", ()=>{
   let CreateRendered
 
   beforeEach(()=>{
+    window.firebase = {
+      database: ()=>{
+        return {
+          ref: ()=>{
+            return {
+              once: ()=>{
+                
+              }
+            }
+          }
+        }
+      }
+    }
 
     CreateRendered = TestUtils.renderIntoDocument(<Create/>)
-
   })
 
   it("should have a list of questions", ()=>{
